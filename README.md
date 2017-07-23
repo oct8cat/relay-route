@@ -42,3 +42,9 @@ const App = () => (
   </Router>
 )
 ```
+
+## Run example
+
+```
+yarn && yarn build-example && yarn example
+```
