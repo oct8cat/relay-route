@@ -1,4 +1,4 @@
-# <RelayRoute>
+# `<RelayRoute>`
 
 `<Route>` meets `<QueryRenderer>`
 

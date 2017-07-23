@@ -19,5 +19,11 @@
     "example": "webpack-dev-server -d",
     "build-example": "relay-compiler --schema example/schema.graphql --src example/src"
   },
-  "main": "src/index.js"
+  "main": "src/index.js",
+  "name": "relay-route",
+  "version": "1.0.0",
+  "description": "Simplifies lazy-loading GraphQL fragments for matching route component",
+  "repository": "git@github.com:oct8cat/relay-route",
+  "author": "Sergey Elsukov <oct8cat@gmail.com>",
+  "license": "MIT"
 }
