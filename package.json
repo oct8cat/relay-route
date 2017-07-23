@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-relay": "^1.1.0",
@@ -16,14 +16,17 @@
     "webpack-dev-server": "^2.6.0"
   },
   "scripts": {
-    "example": "webpack-dev-server -d",
-    "build-example": "relay-compiler --schema example/schema.graphql --src example/src"
+    "dist": "webpack -p",
+    "prepublish": "yarn dist"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "name": "relay-route",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplifies lazy-loading GraphQL fragments for matching route component",
   "repository": "git@github.com:oct8cat/relay-route",
   "author": "Sergey Elsukov <oct8cat@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "/dist/"
+  ]
 }

@@ -1,10 +1,14 @@
 const path = require('path')
-const out = path.resolve('./example/www')
+const src = path.resolve(__dirname, 'src')
+const dist = path.resolve(__dirname, 'dist')
 
 module.exports = {
-  entry: path.resolve('./example/src/index.js'),
+  externals: ['react', 'react-dom', 'react-relay', 'react-router-dom'],
+  entry: src,
   output: {
-    path: out,
+    path: dist,
+    library: 'relay-route',
+    libraryTarget: 'umd',
     filename: 'index.js'
   },
   module: {
@@ -17,6 +21,6 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: out
+    contentBase: dist
   }
 }
