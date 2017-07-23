@@ -3,7 +3,8 @@ const {Route} = require('react-router-dom')
 const {QueryRenderer} = require('react-relay')
 
 const renderQueryRenderer = (environment, query, render) => (props) => {
-  return <QueryRenderer environment={environment} query={query} render={render(props)} />
+  const variables = props.match.params || {}
+  return <QueryRenderer environment={environment} query={query} variables={variables} render={render(props)} />
 }
 
 const renderComponent = (Component) => (props) => ({error, props: relayProps}) => {
