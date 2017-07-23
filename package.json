@@ -19,7 +19,7 @@
   },
   "main": "dist/index.js",
   "name": "relay-route",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simplifies lazy-loading GraphQL fragments for matching route component",
   "repository": "git@github.com:oct8cat/relay-route",
   "author": "Sergey Elsukov <oct8cat@gmail.com>",
